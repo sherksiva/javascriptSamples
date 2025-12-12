@@ -186,6 +186,49 @@ async function getData() {
 }
 getData();
 console.log("-----------------------------------");
+
+console.log("Hoisting example:");
+//hoisting example
+console.log("Value of hoistedVar before declaration:", hoistedVar); 
+var hoistedVar = "I'm hoisted!";
+console.log("Value of hoistedVar after declaration:", hoistedVar);
+//this keyword example
+console.log("-----------------------------------");
+
+console.log("This Keyword Example:");
+const obj = {
+    name: "JavaScript Object",
+    getName: function() {
+        return this.name;
+    }
+};
+console.log("Object name using this keyword:", obj.getName());
+console.log("-----------------------------------");
+console.log("spread operator example:");
+//spread operator example
+function sumThreeNumbers(a, b, c) {
+    return a + b + c;
+}
+const numbers = [1, 2, 3];
+const total = sumThreeNumbers(...numbers); 
+console.log("Sum of three numbers using spread operator:", total);
+console.log("-----------------------------------");
+console.log("rest parameter example:");
+//rest parameter example
+function multiply(factor, ...args) {
+    return args.map(num => num * factor);
+}
+const multipliedValues = multiply(2, 1, 2, 3, 4);
+console.log("Multiplied values using rest parameter:", multipliedValues);
+//IIFE example
+console.log("-----------------------------------");
+console.log("IIFE (Immediately Invoked Function Expression) Example:");
+(function() {
+    const message = "Hello from IIFE!";
+    console.log(message);
+})();
+console.log("-----------------------------------");
+
 console.log("======================End of examples===============================");
 // Note: To see the output, run this code in a JavaScript environment that supports console logging, such as a web browser or Node.js.
 
