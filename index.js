@@ -1,6 +1,14 @@
 console.log("=====================Start of examples=============================");
+console.log("=========Hoisting and Closure Examples=========");
+//Hoisting example.
+console.log("1. Javascript Hoisting Example:");
+console.log(x, "Value of x before declaration");
+var x = 10;
+console.log("Value of x after declaration:", x);
+console.log("-----------------------------------");
+
 //closure example
-console.log("1. Closure Example:");
+console.log("2. Closure Example:");
 function outer() {
     let outerVar = "I'm in the outer scope!";
     function inner() {
@@ -17,23 +25,26 @@ console.log("Second call:");
 closure();
 console.log("-----------------------------------");
 
-console.log("2. Various Function Examples:");
+console.log("=========Various Function Examples=========");
 // Sum of tow numbers example
+console.log("3. Various Function Examples:");
 function sum(a, b) {
     return a + b;
 }
 console.log("Sum of 5 and 10 is:", sum(5, 10));
 console.log("-----------------------------------");
-console.log("3. Finding Maximum Number Example:");
+
 // find maxnumber example
+console.log("4. Finding Maximum Number Example:");
 function findMaxNumber(arr) {
     return Math.max(...arr);
 }
 console.log("Maximum number in [3, 5, 7, 2, 8] is:", findMaxNumber([3, 5, 7, 2, 8]));
 console.log("-----------------------------------");
+
 console.log("=========String and Array Manipulation Examples=========");
-console.log("1. isPalindrome Checking Example:");
 // ispalindrome example
+console.log("1. isPalindrome Checking Example:");
 function isPalindrome(str) {
     const cleanedStr = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
     const reversedStr = cleanedStr.split('').reverse().join('');
@@ -231,5 +242,3 @@ console.log("-----------------------------------");
 
 console.log("======================End of examples===============================");
 // Note: To see the output, run this code in a JavaScript environment that supports console logging, such as a web browser or Node.js.
-
-
