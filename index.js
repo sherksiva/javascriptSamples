@@ -1,4 +1,4 @@
-console.log("=====================Start of examples=============================");
+console.log("=========Start of examples==================");
 console.log("=========Hoisting and Closure Examples=========");
 //Hoisting example.
 console.log("1. Javascript Hoisting Example:");
@@ -27,7 +27,7 @@ console.log("-----------------------------------");
 
 console.log("=========Various Function Examples=========");
 // Sum of tow numbers example
-console.log("3. Various Function Examples:");
+console.log("1. Various Function Examples:");
 function sum(a, b) {
     return a + b;
 }
@@ -35,7 +35,7 @@ console.log("Sum of 5 and 10 is:", sum(5, 10));
 console.log("-----------------------------------");
 
 // find maxnumber example
-console.log("4. Finding Maximum Number Example:");
+console.log("2. Finding Maximum Number Example:");
 function findMaxNumber(arr) {
     return Math.max(...arr);
 }
@@ -240,5 +240,5 @@ console.log("IIFE (Immediately Invoked Function Expression) Example:");
 })();
 console.log("-----------------------------------");
 
-console.log("======================End of examples===============================");
+console.log("==========End of examples==========");
 // Note: To see the output, run this code in a JavaScript environment that supports console logging, such as a web browser or Node.js.
